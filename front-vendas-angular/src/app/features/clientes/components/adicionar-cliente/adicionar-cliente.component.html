@@ -1,0 +1,25 @@
+<h1>Adicionar Cliente</h1>
+<form (ngSubmit)="onSubmit()">
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" [(ngModel)]="cliente.nome" name="nome" required><br><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" [(ngModel)]="cliente.email" name="email" required><br><br>
+
+  <label for="telefone">Telefone:</label>
+  <input type="text" id="telefone" [(ngModel)]="cliente.telefone" name="telefone" required><br><br>
+
+  <label for="endereco">Endereço:</label>
+  <input type="text" id="endereco" [(ngModel)]="cliente.endereco" name="endereco"><br><br>
+
+  <button type="submit">Adicionar Cliente</button>
+</form>
+
+<!-- Mensagem de sucesso ou erro -->
+<div *ngIf="mensagem" class="alert" [ngClass]="{'alert-success': sucesso, 'alert-error': !sucesso}">
+  {{ mensagem }}
+</div>
+
+<!-- Exibir a mensagem de sucesso ou erro -->
+<!--p [ngClass]="mensagem.includes('Erro') ? 'error' : ''">{{ mensagem }}</p-->
+<!--p *ngIf="mensagem">{{ mensagem }}</p-->

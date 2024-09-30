@@ -1,0 +1,59 @@
+h2 {
+  text-align: center; /* Centraliza o título */
+  color: #2c3e50; /* Cor do texto do título */
+  margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.cliente-list {
+  list-style-type: none; /* Remove os marcadores da lista */
+  padding: 0; /* Remove o padding padrão */
+  max-width: 600px; /* Largura máxima da lista */
+  margin: 0 auto; /* Centraliza a lista na tela */
+}
+
+.cliente-item {
+  background-color: #ecf0f1; /* Cor de fundo para cada item */
+  border: 1px solid #bdc3c7; /* Borda para cada item */
+  border-radius: 8px; /* Bordas arredondadas */
+  padding: 15px; /* Espaçamento interno */
+  margin-bottom: 15px; /* Espaço entre os itens da lista */
+  transition: transform 0.2s; /* Animação ao passar o mouse */
+}
+
+.cliente-item:hover {
+  transform: scale(1.02); /* Leve aumento no tamanho ao passar o mouse */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+
+.cliente-item div {
+  margin-bottom: 5px; /* Espaço entre as informações do cliente */
+}
+
+.cliente-item strong {
+  color: #34495e; /* Cor dos rótulos */
+}
+
+/* botão de exportar PDF */
+.exportar-pdf-btn {
+  background-color: #4CAF50; /* Verde */
+  color: white; /* Texto branco */
+  padding: 10px 20px; /* Espaçamento interno */
+  border: none; /* Sem borda */
+  border-radius: 5px; /* Cantos arredondados */
+  cursor: pointer; /* Mão ao passar o mouse */
+  font-size: 16px; /* Tamanho da fonte */
+  transition: background-color 0.3s; /* Transição suave */
+  margin-top: 20px; /* Espaçamento acima do botão */
+}
+
+.exportar-pdf-btn:hover {
+  background-color: #45a049; /* Cor um pouco mais escura ao passar o mouse */
+}
+
+/* Centraliza o botão */
+.button-container {
+  display: flex;
+  justify-content: center; /* Centraliza o botão horizontalmente */
+  margin-top: 20px; /* Adiciona espaço acima do botão */
+}
+  

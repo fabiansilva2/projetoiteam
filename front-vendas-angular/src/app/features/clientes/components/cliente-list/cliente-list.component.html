@@ -1,0 +1,19 @@
+
+
+<h2>Clientes</h2>
+
+<ul class="cliente-list">
+
+  <li *ngFor="let cliente of clientes" class="cliente-item">
+    <div><strong>Nome:</strong> {{ cliente.nome }}</div>
+    <div><strong>Email:</strong> {{ cliente.email }}</div>
+    <div><strong>Telefone:</strong> {{ cliente.telefone }}</div>
+    <div><strong>Endereço:</strong> {{ cliente.endereco }}</div>
+  </li>
+  
+</ul>
+
+<div class="button-container">
+<!-- Botão para exportar a lista de clientes em PDF -->
+<button class="exportar-pdf-btn" (click)="exportarPDF()">Exportar PDF</button>
+</div>

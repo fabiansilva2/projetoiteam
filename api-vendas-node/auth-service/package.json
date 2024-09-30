@@ -1,0 +1,8 @@
+{
+    "scripts": {
+        "test": "jest"
+    },
+    "devDependencies": {
+        "node-mocks-http": "^1.16.0"
+    }
+}

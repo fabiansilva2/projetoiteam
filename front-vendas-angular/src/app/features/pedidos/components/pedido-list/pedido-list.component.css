@@ -1,0 +1,36 @@
+.pedido-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .pedido-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pedido-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .pedido-item span {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .pedido-id {
+    font-weight: bold;
+  }
+  
+  .cliente-id, .produto-id, .quantidade, .total {
+    font-style: italic;
+  }
+  
+  .total {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
